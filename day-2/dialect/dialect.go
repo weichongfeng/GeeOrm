@@ -6,7 +6,7 @@ var dialectsMap = map[string]Dialect{}
 
 type Dialect interface {
 	DataTypeOf(typ reflect.Value) string
-	TableExistSql(tableName string) (string, []interface{})
+	TableExistSQL(tableName string) (string, []interface{})
 }
 
 func RegisterDialect(name string, dialect Dialect)  {

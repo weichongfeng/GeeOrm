@@ -6,4 +6,4 @@ require geeorm v0.0.0
 
 require github.com/mattn/go-sqlite3 v1.14.12 // indirect
 
-replace geeorm => ./day-1
+replace geeorm => ./day-2
