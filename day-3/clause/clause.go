@@ -18,7 +18,7 @@ const (
 	ORDERBY
 )
 
-func (c *Clause) set(name Type, vars ...interface{})  {
+func (c *Clause) Set(name Type, vars ...interface{})  {
 	if c.sql == nil {
 		c.sql = make(map[Type]string)
 		c.sqlVars = make(map[Type][]interface{})
